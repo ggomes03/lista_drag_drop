@@ -3,20 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lista Drag Drop</title>
+  <title>Kanban Drag and Drop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<<<<<<< feat/js
   <div class="relogio" id="relogio">00:00:00</div>
   <div class="container">
+=======
+  <div class="background-shape bg-one"></div>
+  <div class="background-shape bg-two"></div>
+>>>>>>> main
 
-    <h1 class="title">nome da lista</h1>
-    <div class="item-lista">
-      <h3>titulo</h3>
-      <button>remover</button>
+  <header class="app-header">
+    <h1>Meu Quadro de Tarefas</h1>
+    <p>Crie listas, adicione cards e arraste entre colunas.</p>
+  </header>
+
+  <main class="app-shell">
+    <section class="new-list-panel">
+      <input id="newListTitle" type="text" placeholder="Nome da nova lista" maxlength="50">
+      <button id="addListButton" type="button">+ Adicionar Lista</button>
+    </section>
+
+    <section id="board" class="board" aria-label="Quadro de listas"></section>
+  </main>
+
+  <template id="listTemplate">
+    <article class="list" data-list-id="">
+      <header class="list-header">
+        <h2 class="list-title" contenteditable="true" spellcheck="false">Nova Lista</h2>
+        <button class="danger small remove-list" type="button" aria-label="Remover lista">Remover</button>
+      </header>
+
+      <div class="cards" aria-label="Cards da lista"></div>
+
+      <form class="new-card-form" autocomplete="off">
+        <input class="new-card-input" type="text" placeholder="Título do card" maxlength="100">
+        <button class="small" type="submit">+ Card</button>
+      </form>
+    </article>
+  </template>
+
+  <template id="cardTemplate">
+    <div class="card" draggable="true" data-card-id="">
+      <span class="card-title" contenteditable="true" spellcheck="false">Novo Card</span>
+      <button class="danger remove-card" type="button" aria-label="Remover card">x</button>
     </div>
+<<<<<<< feat/js
     <button>adicionar</button>
   </div>
 <script src="index.js"></script>
+=======
+  </template>
+
+  <script src="index.js"></script>
+>>>>>>> main
 </body>
 </html>
