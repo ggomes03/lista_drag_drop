@@ -16,3 +16,10 @@
   justify-content: center;
   flex-direction: column;
 }
+
+.relogio {
+  margin: 8px 0 14px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+}
