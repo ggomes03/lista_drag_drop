@@ -1,0 +1,18 @@
+.container {
+  width: 250px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+}
+
+.item-lista {
+  width: 80%;
+  border: solid 1px #ccc;
+  margin: 10px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
